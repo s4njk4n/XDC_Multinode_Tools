@@ -12,3 +12,5 @@ In the meantime, for some easy reading to get a better understanding of how the 
 [XDC Network: How to Migrate a Full-Node from a Local Ubuntu 20.04 “One-Click Installer” to “Docker” on a Remote Ubuntu 20.04 Server](https://medium.com/@s4njk4n/xinfin-xdc-network-how-to-migrate-a-full-node-from-a-local-ubuntu-20-04-b51624e96db8)
 
 [XDC Network: How to Improve the Peer-count of your Full Node](https://medium.com/@s4njk4n/how-to-improve-the-peer-count-of-your-xinfin-full-node-7372541528b5)
+
+*Note: The node software directory structure and commands have slightly changed since these articles were published.
