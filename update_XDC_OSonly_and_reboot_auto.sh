@@ -33,11 +33,6 @@ read WAITTOREBOOT
 while IFS= read line
 do
 
-   echo
-   echo -e "${GREEN}Deactivating XDC Node - $line ${NC}"
-   echo
-   ssh -n root@$line 'cd ~/XinFin-Node/mainnet && ./docker-down.sh'
-   
    # This section below was neccessary to separate into individual one-line commands and to run TWICE
    # in order for certain VPS providers to work properly
    echo
@@ -51,6 +46,13 @@ do
    ssh -n root@$line 'apt upgrade -y'
    ssh -n root@$line 'apt autoremove -y'
    ssh -n root@$line 'apt clean -y'
+   echo
+   echo
+
+   echo -e "${GREEN}Deactivating XDC Node - $line ${NC}"
+   echo
+   ssh -n root@$line 'cd ~/XinFin-Node/mainnet && ./docker-down.sh'
+   echo
    echo
 
    echo -e "${GREEN}Rebooting VPS - $line ${NC}"
